@@ -1,0 +1,83 @@
+/* Root variable */
+:root {
+    --global-color-1: #800000;
+}
+
+/* Body basic style */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+}
+
+/* Float the logo */
+header img {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Clear float after header */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Header h1 */
+.red-heading {
+    color:  #800000;
+}
+
+/* Header h2 */
+header h2 {
+    font-size: 170%;
+    color: var(--global-color-1);
+    text-indent: 30px;
+}
+
+/* Header h3 */
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 30px;
+}
+
+/* Main images float left */
+main img {
+    float: left;
+    margin-right: 10px;
+}
+
+/* Clear float after main */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Links hover and focus italic */
+a:hover, a:focus {
+    font-style: italic;
+}
+
+/* Footer center text */
+footer p {
+    text-align: center;
+}
+
+/* Text shadow for 75th */
+.shadow {
+    text-shadow: 2px 2px var(--global-color-1);
+}
+
+.speaker {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.speaker img {
+    float: left;
+    margin-right: 15px;
+}
+
+.speaker h3 {
+    margin-top: 0;
+}
